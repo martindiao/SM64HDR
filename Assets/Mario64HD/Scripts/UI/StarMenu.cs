@@ -70,7 +70,7 @@ public class StarMenu : MonoBehaviour {
 
         StartCoroutine(FadeIntoMenu());
 
-        if (Application.isWebPlayer)
+        if (!Application.isEditor)
         {
             QuitButtonExe.SetActive(false);
         }

@@ -27,7 +27,7 @@ public class LevelMenu : MonoBehaviour {
 		play = false;
         StartCoroutine(FadeIntoMenu());
 
-        if (Application.isWebPlayer)
+        if (!Application.isEditor)
         {
             QuitButtonExe.SetActive(false);
         }
